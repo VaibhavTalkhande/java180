@@ -29,5 +29,11 @@ public class StringMethods {
         System.out.println(letter.indexOf("   "));
         String myLetter = "Dear Harry,\n\tThis Java Course is Nice.\nThanks!";
         System.out.println(myLetter);
+        /*Escape Sequence Characters :
+        The sequence of characters after backslash ‘\’ = Escape Sequence Characters
+        Escape Sequence Characters consist of more than one character but represent one character when used within the strings.
+        Examples: \n (newline), \t (tab), \’ (single quote), \\ (backslash), etc.
+
+         */
     }
 }
