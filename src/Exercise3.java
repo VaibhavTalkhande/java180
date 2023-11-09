@@ -68,6 +68,35 @@ public class Exercise3 {
             System.out.printf("\n");
 
         }
+        // Practice Problem 6
+        int [] arr = {1, 2100, 3, 455, 5, 34, 67};
+        int max = Integer.MIN_VALUE;
+        for(int e: arr){
+            if(e>max){
+                max = e;
+            }
+        }
+        System.out.println("the value of the maximum element in this array is: "+ max);
+
+        // Practice Problem 6
+        System.out.println(Integer.MIN_VALUE);
+        System.out.println(Integer.MAX_VALUE);
+
+        // Practice Problem 7
+        boolean isSorted = true;
+        int [] a1 = {1, 12, 3, 4, 5, 34, 67};
+        for(int i=0;i<a1.length-1;i++){
+            if(a1[i] > a1[i+1]){
+                isSorted = false;
+                break;
+            }
+        }
+        if(isSorted){
+            System.out.println("The Array is sorted");
+        }
+        else{
+            System.out.println("The Array is not sorted");
+        }
 
     }
 }
