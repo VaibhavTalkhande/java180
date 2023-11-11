@@ -11,6 +11,9 @@ public class Method {
         x =566;
         return z;
     }
+    int sum(int x,int y){
+        return x+y;
+    }
     public  static  void main(String[] args){
         int a =5;
         int b=7;
@@ -23,9 +26,13 @@ public class Method {
         int a1=2;
         int b1=1;
         int c1;
+        Method p = new Method();
+        int  d= p.sum(5,6);
+        System.out.println(d);
         c1= logic(a1,b1);
         System.out.println(c);
         System.out.println(c1);
+
 
     }
 }
