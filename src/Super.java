@@ -34,5 +34,8 @@ public class Super {
         // Derived1 d = new Derived1(14, 9);
         // ChildOfDerived cd = new ChildOfDerived();
         ChildOfDerived cd = new ChildOfDerived(12, 13, 15);
+        //Dynamic method dispactch;
+        //parent class can be assign/reference child class;
+        Base1 oj = new Derived1();
     }
 }
