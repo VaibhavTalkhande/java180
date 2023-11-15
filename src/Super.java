@@ -35,6 +35,7 @@ public class Super {
         // ChildOfDerived cd = new ChildOfDerived();
         ChildOfDerived cd = new ChildOfDerived(12, 13, 15);
         //Dynamic method dispactch;
+        //runtime polymorphism
         //parent class can be assign/reference child class;
         Base1 oj = new Derived1();
     }
