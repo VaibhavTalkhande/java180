@@ -27,6 +27,23 @@ class ChildOfDerived extends  Derived1{
         System.out.println("I am an overloaded constructor of Derived with value of z as: " + z);
     }
 }
+class Phone{
+    public void showTime(){
+        System.out.println("Time is 8 am");
+    }
+    public void on(){
+        System.out.println("Turning on Phone...");
+    }
+}
+
+class SmartPhone extends Phone{
+    public void music(){
+        System.out.println("Playing music...");
+    }
+    public void on(){
+        System.out.println("Turning on SmartPhone...");
+    }
+}
 public class Super {
     public static void main(String[] args) {
         // Base1 b = new Base1();
@@ -37,6 +54,18 @@ public class Super {
         //Dynamic method dispactch;
         //runtime polymorphism
         //parent class can be assign/reference child class;
-        Base1 oj = new Derived1();
+        // Phone obj = new Phone(); // Allowed
+        // SmartPhone smobj = new SmartPhone(); // Allowed
+        // obj.name();
+
+        Phone obj = new SmartPhone(); // Yes it is allowed
+        // SmartPhone obj2 = new Phone(); // Not allowed
+
+        obj.showTime();
+        obj.on();
+
+
+        // obj.music(); Not Allowed
+
     }
 }
