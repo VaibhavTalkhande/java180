@@ -1,6 +1,6 @@
 package FirstPackage;
 public class Welcome {
-    public static void main(String[] args) {
+    public void show(){
         System.out.println("welcome");
     }
 }

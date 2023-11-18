@@ -1,5 +1,5 @@
 import java.util.Scanner;
-
+import FirstPackage.Welcome;
 public class Arrays {
     public static void main(String[] args) {
         Scanner s = new Scanner(System.in);
@@ -30,6 +30,8 @@ public class Arrays {
             System.out.println(x);
 
         }
+        Welcome n = new Welcome();
+        n.show();
 
 
 
