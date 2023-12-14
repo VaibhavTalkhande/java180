@@ -30,5 +30,30 @@ public class Linkedlists {
             System.out.print(l1.get(i));
             System.out.print(", ");
         }
+        ArrayDeque<Integer> ad1 = new ArrayDeque<>();
+        ad1.add(6);
+        ad1.add(56);
+        ad1.add(9);
+        ad1.add(10);
+        ad1.add(91);
+        ad1.add(19);
+        ad1.addFirst(5);
+        ad1.offerFirst(10);
+        System.out.println(ad1);
+        ad1.addLast(5);
+        ad1.offerLast(10);
+        System.out.println(ad1);
+        System.out.println(ad1.getFirst());
+        System.out.println(ad1.peekFirst());
+        System.out.println(ad1.getLast());
+        System.out.println(ad1.peekLast());
+        System.out.println(ad1.removeFirst());
+        System.out.println(ad1.pollFirst());//poll() is same as remove()
+        System.out.println(ad1.removeLast());
+        System.out.println(ad1.pollLast());
+        System.out.println(ad1);
+        System.out.println(ad1.remove());
+        System.out.println(ad1.poll());
+        System.out.println(ad1);
     }
 }
