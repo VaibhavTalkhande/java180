@@ -116,6 +116,34 @@ public class day1 {
 
         }
     }
+    public static void RecursiveInsertionSort(int[] arr,int size){
+        if(size<=1){
+            return;
+        }
+        for (int j=0;j<=size-2;j++){
+            if(arr[j]>arr[j+1]){
+                int temp=arr[j+1];
+                arr[j+1]=arr[j];
+                arr[j]=temp;
+            }
+        }
+        RecursiveInsertionSort(arr,size-1);
+    }
+    public static void RecursiveBubbleSort(int[] arr,int size){
+        if(size==1){
+            return;
+        }
+        for(int i=0;i<size-1;i++){
+            if(arr[i]>arr[i+1]){
+                int temp=arr[i+1];
+                arr[i+1]=arr[i];
+                arr[i]=temp;
+            }
+        }
+        RecursiveBubbleSort(arr,size-1);
+    }
+
+
     public static void main(String[] args) {
         getNumberPattern(5);
         getNumberPattern(3);
@@ -161,8 +189,32 @@ public class day1 {
         ) {
             System.out.print(x+" ");
         }
-
-
+        System.out.println();
+        int [] arr3 = {2,13,4,1,3,6,28};
+        System.out.printf("before sorting\n");
+        for (int x: arr3
+        ) {
+            System.out.print(x+" ");
+        }
+        RecursiveInsertionSort(arr3,arr3.length);
+        System.out.printf("after recursive insertion sorting\n");
+        for (int x: arr3
+        ) {
+            System.out.print(x+" ");
+        }
+        System.out.println();
+        int [] arr4 = {2,13,4,1,3,6,28};
+        System.out.printf("before sorting\n");
+        for (int x: arr4
+        ) {
+            System.out.print(x+" ");
+        }
+        RecursiveBubbleSort(arr4,arr4.length);
+        System.out.printf("after recursive bubble sorting\n");
+        for (int x: arr4
+        ) {
+            System.out.print(x+" ");
+        }
 
     }
 }
