@@ -103,6 +103,19 @@ public class day1 {
             }
         }
     }
+    public static void insertionSort(int[] arr,int size){
+        int temp=0;
+        for(int i=0;i<size;i++){
+            int j= i;
+                while(j>0&&arr[j-1]>arr[j]){
+                    temp=arr[j-1];
+                    arr[j-1]=arr[j];
+                    arr[j]=temp;
+                    j--;
+                }
+
+        }
+    }
     public static void main(String[] args) {
         getNumberPattern(5);
         getNumberPattern(3);
@@ -117,7 +130,7 @@ public class day1 {
             System.out.print(x+" ");
         }
         selectionSort(arr);
-        System.out.printf("after sorting\n");
+        System.out.printf("after selection sorting\n");
         for (int x: arr
         ) {
             System.out.print(x+" ");
@@ -130,11 +143,25 @@ public class day1 {
             System.out.print(x+" ");
         }
         bubbleSort(arr1);
-        System.out.printf("after sorting\n");
+        System.out.printf("after bubble sorting\n");
         for (int x: arr1
         ) {
             System.out.print(x+" ");
         }
+        System.out.println();
+        int [] arr2 = {2,13,4,1,3,6,28};
+        System.out.printf("before sorting\n");
+        for (int x: arr2
+        ) {
+            System.out.print(x+" ");
+        }
+        insertionSort(arr2,arr2.length);
+        System.out.printf("after insertion sorting\n");
+        for (int x: arr2
+        ) {
+            System.out.print(x+" ");
+        }
+
 
 
     }
