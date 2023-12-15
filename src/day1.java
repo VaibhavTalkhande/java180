@@ -90,6 +90,19 @@ public class day1 {
 
         }
     }
+    public static void  bubbleSort(int[] arr){
+        int temp=0;
+        int n = arr.length;
+        for (int i=0;i<n-1;i++){
+            for(int j=0;j<n-i-1;j++){
+                if(arr[j]>arr[j+1]){
+                    temp=arr[j+1];
+                    arr[j+1]=arr[j];
+                    arr[j]=temp;
+                }
+            }
+        }
+    }
     public static void main(String[] args) {
         getNumberPattern(5);
         getNumberPattern(3);
@@ -106,6 +119,19 @@ public class day1 {
         selectionSort(arr);
         System.out.printf("after sorting\n");
         for (int x: arr
+        ) {
+            System.out.print(x+" ");
+        }
+        System.out.println();
+        int [] arr1 = {1, 21, 3, 4, 5, 34, 67};
+        System.out.printf("before sorting\n");
+        for (int x: arr1
+        ) {
+            System.out.print(x+" ");
+        }
+        bubbleSort(arr1);
+        System.out.printf("after sorting\n");
+        for (int x: arr1
         ) {
             System.out.print(x+" ");
         }
